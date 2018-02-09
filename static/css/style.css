@@ -1,0 +1,101 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+#wrapper {
+    width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+/* #wrapper>p {
+    display: inline-block;
+} */
+
+h1, h3, form {
+    padding: 10px;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+p {
+    padding: 5px;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+h1+p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+form {
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+
+label, input[type="submit"] {
+    margin: 10px;
+}
+label, form p {
+    display: table-row;
+    width: 100%;
+}
+form span, input, select, textarea, input[type="submit"] {
+    display: table-cell;
+    vertical-align: top;
+    margin: 5px;
+}
+form span {
+    width: 30%;
+}
+select, textarea, input[type="text"] {
+    width: 125px;
+    text-align: center;
+    display: block;
+    margin: 5px auto;
+    font-size: 1.3em;
+}
+
+input[type="submit"] {
+    width: 125px;
+    font-weight: bold;
+    height: 30px;
+    margin: 20px 10px 0px;
+    cursor: pointer;
+}
+
+#resultsLayer {
+    text-align: center;
+    border: 2px solid transparent;
+    width: 300px;
+    height: 190px;
+    margin: 25px auto 0px;
+}
+#resultsLayer p {
+    font-weight: bold;
+    color: white;
+    line-height: 160px;
+    font-size: 1.5em;
+}
+
+.alert {
+    color: red;
+    white-space: nowrap;
+}
+
+.add-bottom-p {
+    padding-bottom: 35px;
+}

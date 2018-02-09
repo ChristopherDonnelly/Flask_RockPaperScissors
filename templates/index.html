@@ -1,0 +1,26 @@
+<html>
+    <head>
+       <title>Great Number Game!</title>
+       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <div id="wrapper">
+            <p>Wins: {{session['wins']}}</p>
+            <p>Loses: {{session['lose']}}</p>
+            <p>Ties: {{session['ties']}}</p>
+            <h1>Rock Paper Scissors</h1>
+            <p style="color: {{session['color']}};">{{session['wlt']}}</p>
+            <form action='/rpc' method='post'>
+                <!-- Rock -->
+                <input type='submit' name="submit" value='Rock' />
+                <!-- Paper -->
+                <input type='submit' name="submit" value='Paper'>
+                <!-- Scissor -->
+                <input type='submit' name="submit" value='Scissors'>
+            </form>
+            <form action='/reset' method='post'>
+                <input type='submit' name="submit" value='Reset'>
+            </form>
+        </div>
+    </body>
+</html>
